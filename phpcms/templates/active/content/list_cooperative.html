@@ -1,0 +1,84 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/cooperative.css">
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+	<div class="container coo-cont">
+	<ul>
+		{pc:content action="lists" catid="$catid" num="10" order="listorder DESC,id DESC" moreinfo="1"}
+		<?php $s=0;?>
+		{loop $data $r}
+			<?php
+				if($s%2==0){
+			?>
+				<li>
+					<div class="coo-left">
+						<p>{$r[title]}</p>
+						<p>{$r[description]}</p>
+						<div class="coo-let-img">
+							{php $imgs=images_json($r[pictureurls]);}
+							{php $i=0;}
+							{loop $imgs $v}
+							{php $i++;}
+								<img src="{$v[url]}" alt="{$v[alt]}">
+							{php if($i==2)break;}
+							{/loop}
+						</div>
+					</div>
+					<div class="coo-sc"></div>
+					<div class="coo-right" style="padding-left: 20px;">
+						{php $i=0;}
+						{loop $imgs $s}
+						<?php
+							if($i==2){
+						?>
+							<img src="{$s[url]}" alt="{$s[alt]}">
+						<?php
+							}
+							$i++;
+						?>
+						{/loop}
+					</div>
+				</li>
+			<?php
+				}else{
+			?>
+				<li>
+					<div class="coo-right">
+						{php $i=0;}
+						{loop $imgs $s}
+						<?php
+							if($i==2){
+						?>
+							<img src="{$s[url]}" alt="{$s[alt]}">
+						<?php
+							}
+							$i++;
+						?>
+						{/loop}
+					</div>
+					<div class="coo-sc"></div>
+					<div class="coo-left" style="padding-left: 20px;">
+						<p style="text-align: right;">{$r[title]}</p>
+						<p>{$r[description]}</p>
+						<div class="coo-let-img">
+							{php $imgs=images_json($r[pictureurls]);}
+							{php $i=0;}
+							{loop $imgs $v}
+							{php $i++;}
+								<img src="{$v[url]}" alt="{$v[alt]}">
+							{php if($i==2)break;}
+							{/loop}
+						</div>
+					</div>
+				</li>
+			<?php
+				}
+			?>
+		{/loop}
+		{/pc}
+		
+	</ul>
+</div>
+</div>
+{template "content","footer"}

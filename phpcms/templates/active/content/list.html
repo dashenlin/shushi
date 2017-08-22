@@ -1,0 +1,32 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/news.css">
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+
+	<div class="baby-cont">
+	{pc:content action="lists" catid="$catid" num="9" order="id DESC" wx_page="$page"}
+		<ul>
+			{loop $data $r}
+				<li>
+					<?php
+						if($catid=='10'){
+					?>
+					<div class="time"><p>{date('d',$r[inputtime])}</p><p>{date('Y-m',$r[inputtime])}</p></div>
+					<?php	
+						}
+					?>
+					<a href="{$r[url]}" target="_blank"><img src="{$r[thumb]}" alt="{$r[title]}"><p><span {title_style($r[style])}>{$r[title]}</span><span>{strCut($r[description],135)}</span></p></a>
+				</li>
+			{/loop}
+		</ul>
+		<div class="clear"></div>
+		<div class="container baby-page">
+			<nav aria-label="...">
+		      {$wx_pages}
+		    </nav>
+		</div>
+	{/pc}
+	</div>
+</div>
+{template "content","footer"}

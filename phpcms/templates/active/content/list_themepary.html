@@ -1,0 +1,38 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/news.css">
+<style>
+.sm-title-title{
+	background-image: url(/statics/images/shoushi/png/zhuti.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+</style>
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+
+	<div class="baby-cont">
+	{pc:content action="lists" catid="$catid" num="9" order="listorder DESC,id DESC" wx_page="$page" moreinfo="1"}
+		<ul>
+			{loop $data $r}
+				<li>
+				<?php
+					$r[pictureurls]=rtrim($r[pictureurls], "{");
+					$r[pictureurls]=ltrim($r[pictureurls], "}");
+					$r[pictureurls]=stripslashes($r[pictureurls]);
+					$r[pictureurls]=json_decode($r[pictureurls],true);
+				?>
+				<a href=""><img src="{$r[pictureurls][0][url]}" alt="{$r[title]}"><p><span {title_style($r[style])}>{$r[title]}</span><span>{strCut($r[description],135)}</span></p></a>
+				</li>
+			{/loop}
+		</ul>
+		<div class="clear"></div>
+		<div class="container baby-page">
+			<nav aria-label="...">
+		      {$wx_pages}
+		    </nav>
+		</div>
+	{/pc}
+	</div>
+</div>
+{template "content","footer"}

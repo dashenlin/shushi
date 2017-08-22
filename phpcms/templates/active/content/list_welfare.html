@@ -1,0 +1,65 @@
+{template "include","header"}
+	{template "include","now-banner"}
+	<div class="cleardiv"></div>
+	<!-- 内容区 Begin -->
+	<div class="jzh-con-bg">
+		{template "include","history-nav"}
+		<div class="cleardiv"></div>
+
+		<div class="container">
+			<div class="row" style="padding-bottom:40px;">
+				{template "include","left-nav"}
+
+				<!--右侧-->
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 jzh-right-con">
+					<div class="row photo-about">
+					{pc:content action="lists" catid="$catid" num="15" siteid="$siteid" moreinfo="1" order="listorder DESC,id DESC"}
+					{loop $data $r}
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<div class="photo-about-cont">
+								<img src="{$r[thumb]}" alt="{$r[title]}">
+								<p class="photo-about-text"><span><i>{$r[title]}</i>{$r[description]}</span></p>
+							</div>
+						</div>
+					{/loop}
+					{/pc}
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 内容区 End-->
+
+	<div class="cleardiv"></div>
+	<script type="text/javascript" charset="utf-8">
+		console.log($('.photo-about-cont').width(), $('.photo-about-cont').innerHeight())
+
+		var H, W, pL, spanW;
+
+		$('.photo-about-cont').hover(function () {
+			$(this).find('.photo-about-text i').stop().fadeIn(300);
+			H = $('.photo-about-cont').innerHeight();
+			W = $('.photo-about-cont').width();
+			pL = parseInt($('.photo-about-text').css('paddingLeft'));
+			spanW = $('.photo-about-text span').width();
+
+			$(this).find('.photo-about-text').stop().animate({
+				paddingLeft: W / 2 - spanW / 2
+			}, 400, function () {
+				$(this).animate({
+					height: H
+				}, 300);
+			});
+		}, function () {
+			$(this).find('.photo-about-text i').stop().fadeOut(300);
+			$(this).find('.photo-about-text').stop().animate({
+				height: 45
+			}, 200, function () {
+				$(this).animate({
+					paddingLeft: 30
+				}, 150)
+			});
+		});
+	</script>
+{template "include","footer"}

@@ -1,0 +1,21 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/news.css">
+{template "content","currentbanner"}
+{template "content","hisnav"}
+<div class="container news-cont">
+	<h3>{$title}</h3>
+	<?php
+		if($catid=='10'){
+	?>
+	<div class="news-cont-dec">
+		<span>来源：{$copyfrom}</span>
+		<span>日期：{$inputtime}</span>
+	</div>
+	<?php	
+		}
+	?>
+	<div class="news-cont-c">
+		{$content}
+	</div>
+</div>
+{template "content","footer"}

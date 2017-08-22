@@ -1,0 +1,120 @@
+.park-main {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 195px;
+    overflow: hidden;
+
+    .park-left {
+        position: relative;
+        margin-top: 49px;
+        margin-left: 23px;
+        width: 838px;
+        height: 616px;
+        background: url("/img/park-map-bg.jpg") no-repeat;
+
+        a {
+            position: absolute;
+            display: block;
+            //width: 19px;
+            height: 33px;
+            background: url("/img/map-address2.png") no-repeat;
+            span {
+                position: relative;
+                left: 25px;
+                bottom: -18px;
+                display: inline-block;
+                line-height: 14px;
+                font-size: 13px;
+                color: #333;
+                font-weight: 600;
+            }
+        }
+        .active {
+            background: url("/img/map-address.png") no-repeat;
+
+            span {
+                bottom: -12px;
+                line-height: 24px;
+                font-size: 22px;
+                color: #ff7816;
+            }
+        }
+        .beijing {
+            top: 236px;
+            left: 572px;
+        }
+        .hebei {
+            top: 217px;
+            left: 577px;
+        }
+        .shanxi {
+            top: 436px;
+            left: 553px;
+        }
+        .guizhou {
+            top: 506px;
+            left: 455px;
+        }
+    }
+    .park-right {
+        width: 286px;
+        .title {
+            padding: 24px 0 24px 22px;
+            width: 100%;
+            background-color: #f36500;
+            line-height: 24px;
+            font-size: 24px;
+            color: #fff;
+            span {
+                padding-left: 10px;
+                border-left: 2px solid #fff;
+            }
+        }
+
+        .address-list-cont {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .content {
+            ul {
+                padding: 0;
+                li {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 22px;
+                    border-bottom: 1px solid #d8d8d8;
+                    p {
+                        margin: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        line-height: 16px;
+                        font-size: 12px;
+                        color: #666;
+
+                        img {
+                            display: block;
+                            float: left;
+                            padding-right: 5px;
+                            margin-top: 2px;
+                        }
+                        span {
+                            display: block;
+                            float: left;
+                            width: 245px;
+                        }
+                    }
+                    p:first-child {
+                        padding-bottom: 5px;
+                        line-height: 18px;
+                        font-size: 16px;
+                        color: #333;
+                    }
+                }
+            }
+
+        }
+    }
+}

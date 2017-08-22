@@ -1,0 +1,20 @@
+.re-cont-top img:last-child {
+    margin-right: -30px !important;
+}
+
+.re-cont-top {
+    padding-top: 50px;
+}
+
+.re-cont-top img {
+    padding-right: 30px;
+    width: 370px;
+}
+
+.re-cont-fot {
+    padding-top: 76px;
+}
+
+.re-cont-fot p:first-child {
+    font-size: 24px;
+}

@@ -1,0 +1,65 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/teacher.css">
+<link rel="stylesheet" href="{CSS_PATH}shoushi/classall.css">
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+
+<div class="container" style="width: 1200px;">
+<div class="tab tabs" role="tabpanel">
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs" role="tablist">
+		{pc:content action="category" catid="$catid" num="2" siteid="$siteid" order="listorder ASC"}
+		<li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">{$data[39][catname]}</a></li><li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">{$data[40][catname]}</a></li>
+		{/pc}
+	</ul>
+	<!-- Tab panes -->
+	<div class="tab-content tabs">
+		<div role="tabpanel" class="tab-pane fade in active" id="Section1">
+			<ul class="classall">
+			{pc:content action="lists" catid="39" num="3" siteid="$siteid" order="listorder ASC" moreinfo="1"}
+			{php $i=0;}
+			{loop $data $r}
+				<li>
+					<?php
+						if($i%2==0){
+					?>
+						<p><img src="{$r[thumb]}" alt="{$r[title]}"></p>
+						<p style="padding-left: 66px;">{$r[content]}</p>
+					<?php	
+						}else{
+					?>
+						<p style="padding-right: 66px;">{$r[content]}</p>
+						<p style="text-align: right;"><img src="{$r[thumb]}" alt="{$r[title]}"></p>
+					<?php	
+						}
+					?>
+					
+				</li>
+			{php $i++;}
+			{/loop}
+			{/pc}
+			</ul>
+		</div>
+
+		<div role="tabpanel" class="tab-pane fade" id="Section2">
+			<div class="fivefield">
+			{pc:content action="lists" catid="40" num="1" siteid="$siteid" order="listorder ASC" moreinfo="1"}
+			{loop $data $r}
+				<p>{$r[description]}</p>
+				<ul>
+					{php $imgs=images_json($r[pictureurls]);}
+					{loop $imgs $v}
+						<li><img src="{$v[url]}" alt="{$v[alt]}"></li>
+					{/loop}
+				</ul>
+			{/loop}
+			{/pc}
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="list-fot"><img src="{IMG_PATH}shoushi/list-fot.png" class="img-responsive" alt="Responsive image"></div>
+{template "content","footer"}

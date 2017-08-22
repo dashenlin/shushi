@@ -1,0 +1,38 @@
+
+.classall>li{
+	padding-top: 80px;
+	content:".";        
+	display:block;        
+	height:0;        
+	clear:both;
+}
+.classall>li>p:first-child,.classall>li>p:last-child{
+	width: 50%;
+}
+.classall>li>p:first-child>img,.classall>li>p:last-child>img{
+	height: 100%;
+}
+.classall>li>p{
+	float: left;
+	height: 305px;
+	overflow: hidden;
+}
+.fivefield>p{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-size: 18px;
+}
+.fivefield>ul>li{
+	width: 220px;
+	height: 220px;
+	float: left;
+}
+.fivefield>ul>li>img{
+	width: 100%;
+	height: 100%;
+}
+.sm-title-title{
+	background-image: url(/statics/images/shoushi/png/five.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}

@@ -1,0 +1,38 @@
+.coo-cont {
+    width: 1200px;
+}
+
+.coo-cont>ul>li {
+    width: 1200px;
+    padding-top: 50px;
+}
+
+.coo-left {
+    float: left;
+    width: 680px;
+}
+
+.coo-left>div>img {
+    padding-right: 15px;
+}
+
+.coo-left>div>img:last-child {
+    padding: 0;
+}
+
+.coo-right {
+    float: left;
+    width: 460px;
+}
+
+.coo-left>p:first-child {
+    font-size: 28px;
+}
+
+.coo-left>p:nth-child(2) {
+    height: 160px;
+}
+
+.coo-sc {
+    width: 56px;
+}

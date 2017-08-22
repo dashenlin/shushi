@@ -1,0 +1,47 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/profile.css">
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+	<div class="profile" style="width: 1200px;">
+	{pc:content action="lists" catid="$catid" num="1" order="listorder DESC,id DESC" moreinfo="1"}
+	
+	{loop $data $r}
+		<div class="pro-top">
+			{php $imgs=images_json($r[pictureurls]);$i=0;}
+			{loop $imgs $img}
+			<?php
+				if($i==3){
+					break;
+				}
+				$i++;
+			?>
+			<img src="{$img[url]}" alt="{$img[alt]}"  class="img-rounded">
+			{/loop}
+		</div>
+		<div class="pro-text">
+			<p>{$r[title]}</p>
+			<p>{$r[description]}</p>
+		</div>
+		<div class="pro-img">
+			<img src="{IMG_PATH}shoushi/profile-num-6.png" alt="">
+		</div>
+		<div class="pro-bot">
+			{php $imgs=images_json($r[pictureurls]);$i=0;}
+			{loop $imgs $img}
+			<?php
+				if($i>=3){
+			?>
+			<img src="{$img[url]}" alt="{$img[alt]}"  class="img-rounded">
+			<?php
+				if($i>=4)break;}
+				$i++;
+			?>
+			{/loop}
+		</div>
+	{/loop}
+	{/pc}
+	</div>
+</div>
+<div class="list-fot"><img src="{IMG_PATH}shoushi/list-fot.png" class="img-responsive" alt="Responsive image"></div>
+{template "content","footer"}

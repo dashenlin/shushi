@@ -1,0 +1,236 @@
+.park-main {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 30px;
+  padding-bottom: 195px;
+  overflow: hidden; }
+  .park-main .park-left {
+    position: relative;
+    margin-top: 49px;
+    margin-left: 23px;
+    width: 838px;
+    height: 616px;
+    background: url("/statics/images/shoushi/park-map-bg.jpg") no-repeat;
+	overflow: hidden; }
+    .park-main .park-left a {
+      position: absolute;
+      display: block;
+      height: 33px;
+      background: url("/statics/images/shoushi/map-address2.png") no-repeat; }
+      .park-main .park-left a span {
+        position: relative;
+        left: 25px;
+        bottom: -18px;
+        display: inline-block;
+        line-height: 14px;
+        font-size: 13px;
+        color: #333;
+        font-weight: 600; }
+    .park-main .park-left .active {
+      background: url("/statics/images/shoushi/map-address.png") no-repeat; }
+      .park-main .park-left .active span {
+        bottom: -12px;
+        line-height: 24px;
+        font-size: 22px;
+        color: #ff7816; }
+    .park-main .park-left .beijing {
+      top: 236px;
+      left: 572px; }
+    .park-main .park-left .hebei {
+      top: 266px;
+      left: 555px; }
+    .park-main .park-left .shanxi {
+      top: 290px;
+      left: 512px; }
+    .park-main .park-left .guizhou {
+      top: 450px;
+      left: 436px; }
+	.address-erji {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 99;
+	}
+	.address-erji .address-off {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}	
+	.address-erji .address-off a {
+		position: absolute;
+		top: 5px;
+		right: 20px;
+		width: 26px;
+		height: 26px;
+		background: url('/statics/images/shoushi/address-off.png') no-repeat;
+	}
+  .park-main .park-right {
+    width: 286px; }
+    .park-main .park-right .title {
+      padding: 24px 0 24px 22px;
+      width: 100%;
+      background-color: #f36500;
+      line-height: 24px;
+      font-size: 24px;
+      color: #fff; }
+      .park-main .park-right .title span {
+        padding-left: 10px;
+        border-left: 2px solid #fff; }
+    .park-main .park-right .address-list-cont {
+      display: none; }
+    .park-main .park-right .active {
+      display: block; }
+    .park-main .park-right .content ul {
+      padding: 0; }
+      .park-main .park-right .content ul li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 22px;
+        border-bottom: 1px solid #d8d8d8; }
+        .park-main .park-right .content ul li p {
+          margin: 0;
+          width: 100%;
+          overflow: hidden;
+          line-height: 16px;
+          font-size: 12px;
+          color: #666; }
+          .park-main .park-right .content ul li p img {
+            display: block;
+            float: left;
+            padding-right: 5px;
+            margin-top: 2px; }
+          .park-main .park-right .content ul li p span {
+            display: block;
+            float: left;
+            width: 245px; }
+        .park-main .park-right .content ul li p:first-child {
+          padding-bottom: 5px;
+          line-height: 18px;
+          font-size: 16px;
+          color: #333; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.newActivity {
+  padding-top: 45px;
+  padding-left: 0;
+  padding-right: 0; }
+  .mode-title {
+    text-align: center; }
+    .mode-title .Headline {
+      padding-right: 20px;
+      font-size: 32px;
+      display: inline-block;
+      font-weight: 700; }
+    .mode-title .Subtitle {
+      position: relative;
+      padding-left: 17px;
+      display: inline-block;
+      border-left: 2px solid #666;
+      font-size: 22px;
+      color: #666;
+      line-height: 22px;
+      }
+      .mode-title .Subtitle .line {
+        position: absolute;
+        top: -35px;
+        left: -9px;
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #666;
+        font-size: 0; }
+  .newActivity .newActivity-content {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    .newActivity .newActivity-content ul {
+      padding: 0; }
+      .newActivity .newActivity-content ul li {
+        position: relative;
+        padding: 15px 0; }
+        .newActivity .newActivity-content ul li a {
+          display: block;
+          overflow: hidden;
+          padding: 15px 0;
+          color: #5c5c5c; }
+          .newActivity .newActivity-content ul li a > div {
+            width: 50%; }
+          .newActivity .newActivity-content ul li a .list-content-time {
+            padding-right: 33px;
+            padding-left: 65px; }
+            .newActivity .newActivity-content ul li a .list-content-time .list-img {
+              /*display: none;*/
+              width: 265px;
+              height: 155px; }
+              .newActivity .newActivity-content ul li a .list-content-time .list-img img {
+                width: 100%;
+                height: 100%; }
+            .newActivity .newActivity-content ul li a .list-content-time .list-time {
+              margin-top: 40px;
+              width: 145px; }
+              .newActivity .newActivity-content ul li a .list-content-time .list-time p {
+                padding-top: 10px;
+                font-size: 16px; }
+              .newActivity .newActivity-content ul li a .list-content-time .list-time p:first-child {
+                padding-top: 0;
+                line-height: 40px;
+                font-size: 50px; }
+          .newActivity .newActivity-content ul li a .list-content-detail {
+            padding-left: 65px;
+            padding-right: 35px;
+            padding-top: 7px; }
+            .newActivity .newActivity-content ul li a .list-content-detail h3 {
+              font-size: 18px;
+              font-weight: 600;
+              margin-bottom: 20px; }
+            .newActivity .newActivity-content ul li a .list-content-detail p {
+              line-height: 25px; }
+        .newActivity .newActivity-content ul li .active {
+          background-color: #fea342;
+          color: #fff;
+	  border: 0;
+	  border-radius: 20px;
+	 }
+          .newActivity .newActivity-content ul li .active .list-content-time {
+            float: right; }
+            .newActivity .newActivity-content ul li .active .list-content-time .list-img {
+              display: block; }
+          .newActivity .newActivity-content ul li .active .list-content-detail {
+            float: left; }
+      .newActivity .newActivity-content ul .spot-line {
+        position: absolute;
+        left: 50%;
+        top: 73px;
+        width: 2px;
+        height: 100%;
+        background-color: #eaeaec;
+        z-index: -1; }
+        .newActivity .newActivity-content ul .spot-line img {
+          position: absolute;
+          top: -10px;
+          left: -3px; }
+  .newActivity .newMore {
+    padding-bottom: 25px;
+    text-align: center; }
+    .newActivity .newMore a {
+      display: inline-block;
+      width: 95px;
+      height: 38px;
+      line-height: 40px;
+      background-color: #5c5c5c;
+      color: #fff;
+      -webkit-transition: all 0.1s;
+      -o-transition: all 0.1s;
+      transition: all 0.1s;
+    }
+    .newActivity .newMore a:hover{
+      background-color: #fea342;
+      text-decoration: none;
+    }
+
+/*# sourceMappingURL=bin-style.css.map */

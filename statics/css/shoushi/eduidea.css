@@ -1,0 +1,69 @@
+.eduidea>ul>li{
+	float: left;
+	width: 300px;
+	height: 487px;
+	background-size: 100%;
+	padding-top: 130px;
+	padding-left: 30px;
+	
+}
+.eduidea>ul>li>p:first-child{
+	font-size: 26px;
+
+}
+.eduidea>ul>li:hover{
+	-webkit-transition: 0.3s all;
+	-o-transition: 0.3s all;
+	transition: 0.3s all;
+}
+.eduidea>ul>li>p:nth-child(2){
+	font-size: 16px;
+}
+
+.eduidea>ul{
+	padding-left: 0;
+	padding-top: 80px;
+	margin-bottom: 100px;
+	color: #fff;
+}
+.eduidea>ul:after{
+     content:".";        
+     display:block;        
+     height:0;        
+     clear:both;        
+     visibility:hidden;
+}
+.eduidea>ul>li:nth-child(1){
+	background-image: url(/statics/images/shoushi/eidea-num-1.jpg);
+
+}
+.eduidea>ul>li:nth-child(1):hover{
+	background-image: url(/statics/images/shoushi/eidea-num-11.jpg);
+
+}
+.eduidea>ul>li:nth-child(2){
+	background-image: url(/statics/images/shoushi/eidea-num-2.png);
+}
+.eduidea>ul>li:nth-child(2):hover{
+	background-image: url(/statics/images/shoushi/eidea-num-22.jpg);
+
+}
+.eduidea>ul>li:nth-child(3){
+	background-image: url(/statics/images/shoushi/eidea-num-3.png);
+}
+.eduidea>ul>li:nth-child(3):hover{
+	background-image: url(/statics/images/shoushi/eidea-num-33.jpg);
+
+}
+.eduidea>ul>li:nth-child(4){
+	background-image: url(/statics/images/shoushi/eidea-num-4.png);
+}
+.eduidea>ul>li:nth-child(4):hover{
+	background-image: url(/statics/images/shoushi/eidea-num-44.jpg);
+
+}
+.sm-title-title{
+	background-image: url(/statics/images/shoushi/png/jiaoyulinian.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}

@@ -1,0 +1,111 @@
+.profile,.pro-text{
+	padding-top: 50px;
+}
+.pro-top>img{
+	padding-right: 9px;
+	display: inline-block;
+}
+.pro-top,.pro-bot{
+	font-size: 0;
+}
+.pro-top>img:last-child{
+	padding: 0;
+}
+
+.pro-text>p:first-child{
+	font-size: 28px;
+}
+.pro-text>p:last-child{
+	font-size: 16px;
+	text-indent: 2em;
+}
+.pro-img{
+	padding-top: 40px;
+	text-align: center;
+}
+.pro-bot{
+	padding-top: 100px;
+}
+.pro-bot>img:first-child{
+	padding-right: 54px;
+}
+.list-fot{
+	padding-top: 30px;
+}
+.chartrain>h3{
+	text-align: center;
+	padding-top: 90px;
+	font-size: 30px;
+}
+.char-cont{
+	padding-top: 45px;
+}
+.char-img{
+	text-align: center;
+	padding-top: 70px;
+}
+.chartrain{
+	padding-bottom: 130px;
+}
+.child-text,.child-img{
+	width: 50%;
+}
+.child-text{
+	padding-top: 40px;
+	padding-left: 110px;
+	padding-right: 105px;
+}
+.child-text>p:first-child{
+	font-size: 30px;
+	overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.child-text>p:last-child{
+	font-size: 16px;
+	text-indent: 2em;
+	height: 202px;
+	overflow: hidden;
+}
+.child-left{
+	float: left;
+}
+.child-right{
+	float: right;
+}
+.childedu>ul>li:after{
+	content:".";        
+    display:block;        
+    height:0;        
+    clear:both;        
+    visibility:hidden;  
+}
+.childedu>ul>li{
+	padding-top: 66px;
+}
+.child-img{
+	position: relative;
+}
+.child-img>p{
+	width: 516px;
+	height: 323px;
+	border: 1px solid #fb8d43;
+
+}
+.child-img>p>img{
+	position: absolute;
+	top: -14px;
+	width: 516px;
+	height: 323px;
+}
+.child-right>p>img{
+	left: -14px;
+}
+.child-left>p>img{
+	left: 14px;
+}
+.sm-title-title{
+	background-image: url(/statics/images/shoushi/png/licheng.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}

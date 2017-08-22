@@ -1,0 +1,20 @@
+.baby-cont>ul>li>a>p {
+    padding: 24px 0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.baby-cont>ul>li {
+    text-align: center;
+}
+
+.baby-cont>ul>li {
+    height: 330px;
+}
+.sm-title-title{
+	background-image: url(/statics/images/shoushi/png/zuopinxiu.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}

@@ -1,0 +1,23 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/profile.css">
+<style>
+.sm-title-title{
+	background-image: url(/statics/images/shoushi/png/jiaoyulinian.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+</style>
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+	<div class="chartrain">
+	{pc:content action="lists" catid="$catid" num="1" order="listorder DESC,id DESC" moreinfo="1"}
+	{loop $data $r}
+		<h3>{$r[title]}</h3>
+		<div class="char-cont">{$r[content]}</div>
+		<div class="char-img"><img src="{IMG_PATH}shoushi/chartrain.png" alt=""></div>
+	{/loop}
+	{/pc}
+	</div>
+</div>
+{template "content","footer"}

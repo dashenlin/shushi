@@ -1,0 +1,31 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/remakers.css">
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+</div>
+<div class="container re-cont">
+	{pc:content action="lists" catid="$catid" num="1" order="listorder DESC,id DESC" moreinfo="1"}
+	{loop $data $r}
+	<div class="re-cont-top">
+		{php $imgs=images_json($r[pictureurls]);}
+		{php $i=0;}
+		{loop $imgs $v}
+			<?php
+				if($i==3){
+					break;
+				}
+			?>
+			<img src="{$v[url]}" alt="{$v[alt]}" class="img-rounded">
+		{php $i++;}
+		{/loop}
+	</div>
+	<div class="re-cont-fot">
+		<p>{$r[title]}</p>
+		<p>{$r[description]}</p>
+	</div>
+	{/loop}
+	{/pc}
+</div>
+<div class="list-fot"><img src="{IMG_PATH}shoushi/list-fot.png" class="img-responsive" alt="Responsive image"></div>
+{template "content","footer"}

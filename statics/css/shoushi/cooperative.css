@@ -1,0 +1,67 @@
+.coo-cont {
+    width: 1200px;
+}
+.coo-cont>ul{
+    padding-left: 0;
+}
+.coo-cont>ul>li {
+    padding-top: 50px;
+    border-bottom: 1px dashed #ddd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.coo-left {
+    float: left;
+    width: 680px;
+}
+
+.coo-left>div>img {
+    padding-right: 15px;
+}
+
+.coo-left>div>img:last-child {
+    padding: 0;
+}
+
+.coo-right {
+    float: left;
+    width: 460px;
+}
+
+.coo-right>img{
+    width: 100%;
+height:444px;
+}
+
+.coo-left>p:first-child {
+    font-size: 28px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.coo-left>p:nth-child(2) {
+    height: 160px;
+}
+
+.coo-sc {
+    width: 56px;
+}
+.coo-cont>ul>li:after{
+    content:".";        
+     display:block;        
+     height:0;        
+     clear:both;        
+     visibility:hidden;
+}
+.sm-title-title{
+    background-image: url(/statics/images/shoushi/png/licheng.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.coo-let-img>img{
+    width: 320px;
+    height: 220px;
+}

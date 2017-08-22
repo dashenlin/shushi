@@ -1,0 +1,33 @@
+    <div class="footer">
+      <div class="container">
+      {pc:content action="lists" catid="49" num="1" order="id DESC"}
+        {loop $data $r}
+        <div class="code">
+          <img src="{$r[thumb]}" alt="{$r[title]}">
+        </div>
+        {/loop}
+      {/pc}
+        <div class="fot-cont">
+          <p>
+            <ul class="fot-cont-nav">
+              <li><a href="{siteurl($siteid)}">网站首页</a></li>
+              <li><a href="{$CATEGORYS[11][url]}">{$CATEGORYS[11][catname]}</a></li>
+              <li><a href="{$CATEGORYS[15][url]}">{$CATEGORYS[15][catname]}</a></li>
+              <li><a href="{$CATEGORYS[25][url]}">{$CATEGORYS[25][catname]}</a></li>
+              <li><a href="{$CATEGORYS[28][url]}">{$CATEGORYS[28][catname]}</a></li>
+              <li><a href="{$CATEGORYS[36][url]}">{$CATEGORYS[36][catname]}</a></li>
+              <li><a href="{$CATEGORYS[43][url]}">{$CATEGORYS[43][catname]}</a></li>
+            </ul>
+          </p>
+          <p>地址：{WEB_ADDRESS}</p>
+          <p>Copyright &copy; 2017 FIRST LEAP All Rights Reserved {WEB_ICP}</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{JS_PATH}shoushi/bootstrap.min.js"></script>
+    <script src="{JS_PATH}shoushi/index.js"></script>
+    <script src="{JS_PATH}shoushi/include.js"></script>
+  </body>
+</html>

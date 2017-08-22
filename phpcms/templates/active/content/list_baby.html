@@ -1,0 +1,23 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/baby.css">
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+	<div class="baby-cont">
+	{pc:content action="lists" catid="$catid" num="9" order="listorder DESC,id DESC" wx_page="$page"  moreinfo="1"}
+		<ul>
+			{loop $data $r}
+				<li><a><img src="{$r[thumb]}" alt="{$r[title]}">
+				<p {title_style($r[style])}>{$r[title]}</p></a></li>
+			{/loop}
+		</ul>
+		<div class="clear"></div>
+		<div class="container baby-page">
+			<nav aria-label="...">
+		      {$wx_pages}
+		    </nav>
+		</div>
+	{/pc}
+	</div>
+</div>
+{template "content","footer"}

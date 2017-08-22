@@ -1,0 +1,103 @@
+<link rel="import" href="/include/header.html?__inline">
+<link rel="stylesheet" href="/css/contact.css">
+<link rel="stylesheet" href="/css/bin-style.css">
+<div class="remark-banner">
+	<img src="/img/remark-banner.jpg" class="img-responsive" alt="Responsive image">
+</div>
+<div class="dis-nav">
+	<div class="container">
+		您当前所在的位置：
+		<span>联系我们 &gt; </span>
+		<span>联系方式</span>
+	</div>
+</div>
+<div class="sm-title">
+	<div class="container">
+		<div class="sm-title-left"><span> 园所分布 </span><span> Garden place distribution </span></div>
+	</div>
+</div>
+<!-- 首实教育--园所分布主题内容 -->
+<div class="container">
+	<div class="sm-title-title" style="background: url(/img/park-bg.jpg) no-repeat; background-position: 0 13px;">
+		<span>园所分布</span>
+		<span>Garden place distribution</span>
+	</div>
+</div>
+<div class="park-main container">
+	<div class="park-left pull-left" id="address-title">
+		<a class="beijing active" href="javascript:;"><span>北京</span></a>
+		<a class="hebei" href="javascript:;"><span>河北</span></a>
+		<a class="shanxi" href="javascript:;"><span>山西</span></a>
+		<a class="guizhou" href="javascript:;"><span>贵州</span></a>
+	</div>
+	<div class="park-right pull-right" id="address-list">
+		<!--循环地址列表-->
+		<div class="address-list-cont active">
+			<div class="title">
+				<span>北京</span>
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<p>首钢幼儿保教中心1</p>
+						<p><img src="/img/park-address.png" alt=""><span>北京市石景山区古城小街15号</span></p>
+						<p><img src="/img/park-phone.png" alt=""><span>010-68874088</span></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="address-list-cont">
+			<div class="title">
+				<span>北京</span>
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<p>首钢幼儿保教中心2</p>
+						<p><img src="/img/park-address.png" alt=""><span>北京市石景山区古城小街15号</span></p>
+						<p><img src="/img/park-phone.png" alt=""><span>010-68874088</span></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="address-list-cont">
+			<div class="title">
+				<span>北京</span>
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<p>首钢幼儿保教中心3</p>
+						<p><img src="/img/park-address.png" alt=""><span>北京市石景山区古城小街15号</span></p>
+						<p><img src="/img/park-phone.png" alt=""><span>010-68874088</span></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="address-list-cont">
+			<div class="title">
+				<span>北京</span>
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<p>首钢幼儿保教中心4</p>
+						<p><img src="/img/park-address.png" alt=""><span>北京市石景山区古城小街15号</span></p>
+						<p><img src="/img/park-phone.png" alt=""><span>010-68874088</span></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--end 循环地址列表-->
+	</div>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script>
+
+	$('#address-title a').click(function () {
+	    $(this).addClass('active').siblings().removeClass('active');
+	    $('#address-list .address-list-cont').eq($(this).index()).addClass('active').siblings('.address-list-cont').removeClass('active');
+	});
+
+</script>
+<link rel="import" href="/include/footer.html?__inline">

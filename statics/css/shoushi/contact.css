@@ -1,0 +1,58 @@
+.map {
+    height: 580px;
+}
+
+.leave {
+    width: 100%;
+    height: 500px;
+}
+
+.map {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.leave {
+    background-size: 100%;
+    margin-top: 58px;
+    margin-bottom: 180px;
+    padding-left: 35px;
+}
+
+.leave>h3 {
+    font-size: 26px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.leave>form {
+    width: 40%;
+}
+
+.leave>form>input, .leave>form>textarea, .leave>form>button, .leave>form>button:hover, .leave>form>button:focus {
+    border: none !important;
+}
+
+.leave>form>input {
+    margin-bottom: 30px;
+}
+
+.leave>form>textarea {
+    margin-bottom: 40px;
+    resize: none;
+}
+
+.leave>form>button {
+    background-color: #00a6f3;
+    color: #fff;
+}
+
+.leave>form>button:hover, .leave>form>button:focus {
+    background-color: #0195d9 !important;
+    color: #fff !important;
+}
+.sm-title-title{
+    background-image: url(/statics/images/shoushi/contact_03.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}

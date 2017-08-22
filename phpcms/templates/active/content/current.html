@@ -1,0 +1,23 @@
+
+<div class="sm-title">
+	<div class="container">
+		<div class="sm-title-left"><span> {$CATEGORYS[$parentid][catname]} </span><span> {$CATEGORYS[$parentid][catname_en]} </span></div>
+		<div class="sm-title-right">
+			<ul>
+				{pc:content action="category" catid="$parentid" num="25" siteid="$siteid" order="listorder ASC"}
+					{php $i=0;}
+					 {loop $data $r}
+					    <li><a href="{$r[url]}">{$r[catname]}</a></li>
+					<?php if($r[catid]==$catid) echo "<script> $( function(){ current($i) } ) </script>"; ?>
+					{php $i++;}
+					 {/loop}
+				{/pc}
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="sm-title-title">
+		<span>{$CATEGORYS[$catid][catname]}</span>
+		<span>{$CATEGORYS[$catid][catname_en]}</span>
+	</div>

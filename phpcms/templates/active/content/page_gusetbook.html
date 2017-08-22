@@ -1,0 +1,21 @@
+{template "content","header"}
+<link rel="stylesheet" href="{CSS_PATH}shoushi/contact.css">
+{template "content","currentbanner"}
+{template "content","hisnav"}
+{template "content","current"}
+	<div class="contact-cont">
+		<div class="leave" style="background-image: url({IMG_PATH}shoushi/leave.jpg);">
+			<h3>在线留言</h3>
+			{if $this->set['gusetbook_status']}
+			<form action="{APP_PATH}index.php?m=gusetbook&c=index&a=ly&siteid={SITEID}" method="post" name="myform" id="myform">
+				<input type="text" name="ly[title]" class="form-control" placeholder="留言标题">
+				<textarea class="form-control" rows="5" name="ly[content]" placeholder="留言内容"></textarea>
+				<button type="submit" class="btn btn-default" name="dosubmit">提交</button>
+			</form>
+			{else}
+				<div style="font-size: 40px;color: red;"><p>留言板已关闭!</p><p>请致电：{WEB_PHONE}</p></div>
+			{/if}
+		</div>
+	</div>
+</div>
+{template "content","footer"}
